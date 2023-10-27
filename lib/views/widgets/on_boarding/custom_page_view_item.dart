@@ -13,9 +13,9 @@ class CustomPageViewItem extends StatelessWidget {
     return Column(
       children: [
 
-        Image.asset(onBoardingList[index].imageUrl!,fit: BoxFit.fill, height: MediaQuery.of(context).size.height * 0.45,width: MediaQuery.of(context).size.width,),
+        Image.asset(onBoardingList[index].imageUrl!,fit: BoxFit.fill, height: MediaQuery.of(context).size.height * 0.5,width: MediaQuery.of(context).size.width,),
         SizedBox(
-          height: MediaQuery.of(context).size.height * 0.03,
+          height: MediaQuery.of(context).size.height * 0.04,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 34.0),
@@ -26,7 +26,7 @@ class CustomPageViewItem extends StatelessWidget {
             Text(onBoardingList[index].title!,
                 style: Styles.textStyle36.copyWith(fontWeight: FontWeight.bold),maxLines: 1,overflow: TextOverflow.ellipsis),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: MediaQuery.of(context).size.height * 0.04,
             ),
             SizedBox(
                 width: MediaQuery.of(context).size.width ,

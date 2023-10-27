@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:my_app/core/constants/routes.dart';
 import 'on_boarding_controller.dart';
 
 class OnBoardingControllerImp extends OnBoardingController {
@@ -6,20 +9,26 @@ class OnBoardingControllerImp extends OnBoardingController {
   late PageController pageController;
   @override
   next() {
-    pageController.nextPage(
-        duration: const Duration(milliseconds: 300), curve: Curves.easeInExpo);
+    if (currentPage < 2) {
+      pageController.nextPage(
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInExpo);
+    } else {
+      Get.toNamed(AppRoutes.loginView);
+    }
   }
 
   @override
   onPageChanged(int index) {
-    currentPage = index;
-    update();
-  }
 
+      currentPage = index;
+      update();
+
+  }
 
   @override
   void onInit() {
-    pageController =PageController();
+    pageController = PageController();
     super.onInit();
   }
 

@@ -8,8 +8,13 @@ class Assets {
   static const String cairoCairoLight = 'assets/fonts/Cairo/Cairo-Light.ttf';
   static const String cairoCairoRegular = 'assets/fonts/Cairo/Cairo-Regular.ttf';
   static const String cairoCairoSemiBold = 'assets/fonts/Cairo/Cairo-SemiBold.ttf';
+  static const String iconsFacebookicon = 'assets/icons/facebookicon.svg';
+  static const String iconsGoogleicon = 'assets/icons/googleicon.svg';
+  static const String iconsInstagramicon = 'assets/icons/instagramicon.png';
+  static const String imagesLoginbg = 'assets/images/loginbg.png';
   static const String imagesOnboardingone = 'assets/images/onboardingone.png';
   static const String imagesOnboardingthree = 'assets/images/onboardingthree.png';
   static const String imagesOnboardingtwo = 'assets/images/onboardingtwo.png';
+  static const String imagesRegisterbg = 'assets/images/registerbg.png';
 
 }
