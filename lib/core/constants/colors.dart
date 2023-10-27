@@ -10,4 +10,5 @@ abstract class AppColors{
   static const Color darkPurple=Color(0xff180683);
   static const Color facebookColor=Color(0xff1877F2);
   static const Color red=Color(0xffD40000);
+  static const Color purple=Color(0xff7376BB);
 }

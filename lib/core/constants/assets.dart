@@ -1,10 +1,10 @@
 abstract class AppImages {
   static const String onBoardingImageOne = 'assets/images/onboardingone.png';
   static const String onBoardingImageTwo = 'assets/images/onboardingtwo.png';
-  static const String onBoardingImageThree =
-      'assets/images/onboardingthree.png';
+  static const String onBoardingImageThree = 'assets/images/onboardingthree.png';
   static const String loginBg = 'assets/images/loginbg.png';
   static const String registerBg = 'assets/images/registerbg.png';
+  static const String landingBg = 'assets/images/landingimage.png';
 }
 
 abstract class AppIcons {

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import '../on_boarding/custom_button.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app/core/constants/styles.dart';
+import '../../../core/constants/colors.dart';
+import 'custom_button.dart';
 import 'custom_auth_second_text.dart';
 import 'custom_auth_text.dart';
 import 'custom_text_form_field.dart';
@@ -63,6 +66,11 @@ class _CustomLoginFormState extends State<CustomLoginForm> {
             height: 29,
           ),
           CustomButton(
+              buttonTextStyle: GoogleFonts.roboto(
+                  textStyle: Styles.textStyle20.copyWith(
+                      color: AppColors.kPrimaryColor,
+                      fontWeight: FontWeight.w500)),
+              buttonColor: AppColors.kButtonColor,
               buttonText: 'LOGIN',
               onPressed: () {
                 if (formKey.currentState!.validate()) {
