@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../controllers/on_boarding_controller_imp.dart';
+import '../../controllers/on_boarding/on_boarding_controller_imp.dart';
 import '../widgets/on_boarding/custom_on_boarding_page_controller.dart';
 import '../widgets/on_boarding/custom_page_view.dart';
 

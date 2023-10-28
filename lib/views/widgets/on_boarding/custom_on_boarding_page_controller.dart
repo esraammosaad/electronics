@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../controllers/on_boarding_controller_imp.dart';
+import '../../../controllers/on_boarding/on_boarding_controller_imp.dart';
 import '../../../core/constants/colors.dart';
 import '../../../data/data_source/static/on_boarding_data.dart';
 

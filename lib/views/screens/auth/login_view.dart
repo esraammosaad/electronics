@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app/controllers/auth/auth_controller_imp.dart';
 import 'package:my_app/core/constants/assets.dart';
 import 'package:my_app/core/constants/routes.dart';
 import 'package:my_app/core/constants/styles.dart';
+import '../../../core/services/api_service.dart';
 import '../../widgets/auth/custom_auth_bg.dart';
 import '../../widgets/auth/custom_auth_bg_image.dart';
 import '../../widgets/auth/custom_auth_row.dart';
@@ -17,6 +18,9 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.put(AuthControllerImp());
+    Get.put(ApiService());
+
     return Scaffold(
       body: SafeArea(
         child: Stack(
@@ -51,7 +55,7 @@ class LoginView extends StatelessWidget {
                     const SizedBox(
                       height: 12,
                     ),
-                     const CustomContactMeRow(),
+                    const CustomContactMeRow(),
                     const SizedBox(
                       height: 29,
                     ),
@@ -62,7 +66,6 @@ class LoginView extends StatelessWidget {
 
                           Get.toNamed(AppRoutes.registerView);
                         }),
-
                   ],
                 ),
               ),
@@ -73,4 +76,3 @@ class LoginView extends StatelessWidget {
     );
   }
 }
-
